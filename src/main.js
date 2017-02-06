@@ -7,22 +7,11 @@ require.config({
         "movieReport": "classes/MovieReport",
         "report": "classes/Report",
         "tools": "tools",
+        "movieHandler": "ui/MovieHandler",
     },
     waitSeconds: 15 
 });
 
-requirejs(['movie'], function(Movie) {
-    var movie1 = new Movie(),
-        movie2 = new Movie("Test", 3, 2005, true);
-
-    console.log(movie2);
-
-});
-
-requirejs(['library'], function(Library) {
-    var movie1 = new Movie(),
-        movie2 = new Movie("Test", 3, 2005, true);
-
-    console.log(movie2);
-
+requirejs(['movie', 'library', 'movieHandler'], function(Movie, Library, MovieHandler) {
+    // ---    
 });
