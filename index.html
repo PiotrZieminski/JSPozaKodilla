@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Library App</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <form>
+                    <div class="form-group">
+                        <label for="movie-title">Tytuł</label>
+                        <input id="movie-title" class="form-control" placeholder="Titanic">
+                    </div>
+                    <div class="form-group">
+                        <label for="movie-year">Rok</label>
+                        <input id="movie-year" class="form-control" placeholder="1900">
+                    </div>
+                    <div class="form-group">
+                        <label for="movie-rating">Ocena</label>
+                        <select id="movie-rating" class="form-control">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>   
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="movie-watched" type="checkbox">Oglądnięty
+                        </label>                        
+                    </div>
+                    
+                    <button id="add-movie" class="btn btn-success">Dodaj</button>
+                </form>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <div class="table-responsive">
+                    <table id="movie-library" class="table">
+                        <thead>
+                            <tr>
+                                <th>Tytuł</th>
+                                <th>Rok</th>
+                                <th>Ocena</th>
+                                <th>Oglądnięty</th>
+                                <th>Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div>  
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/require.js" data-main="src/main"></script>
+</body>
+</html>

@@ -11,6 +11,7 @@ define(['tools'], function(tools) {
 
         return this;
     }
+    
     Library.prototype.remove = function(movie) {
         for (var i = 0, size = this.movies.length; i < size; i++) {
             if (this.movies[i].id === movie.id) {
@@ -21,4 +22,6 @@ define(['tools'], function(tools) {
 
         return this;
     }
+
+    return Library;
 });
